@@ -1,0 +1,175 @@
+
+:root {
+  --rose: #c45d78;
+  --rose-dark: #a83f60;
+  --cream: #fff8f5;
+  --text: #35252b;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text);
+}
+
+.brand-name {
+  color: var(--rose-dark);
+  font-weight: 700;
+}
+
+.hero {
+  background: var(--cream);
+  padding: 80px 0;
+}
+
+.eyebrow {
+  color: var(--rose-dark);
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-text,
+.section-text {
+  color: #76666b;
+  line-height: 1.8;
+  max-width: 550px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.btn-rose {
+  background: var(--rose);
+  color: white;
+  border: 1px solid var(--rose);
+  padding: 12px 22px;
+  border-radius: 6px;
+}
+
+.btn-rose:hover {
+  background: var(--rose-dark);
+  color: white;
+}
+
+.section-padding {
+  padding: 75px 0;
+}
+
+.services-bg {
+  background: var(--cream);
+}
+
+.service-card {
+  background: white;
+  padding: 32px 24px;
+  border-radius: 14px;
+  height: 100%;
+  box-shadow: 0 5px 25px #35252b0d;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px #35252b15;
+}
+
+.service-icon {
+  font-size: 36px;
+  color: var(--rose);
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.service-card p {
+  color: #76666b;
+  line-height: 1.7;
+}
+
+.service-card .price {
+  color: var(--rose-dark);
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.booking-form {
+  background: var(--cream);
+  padding: 30px;
+  border-radius: 14px;
+}
+
+.form-control,
+.form-select {
+  padding: 12px;
+}
+
+.footer {
+  background: #35252b;
+  color: white;
+  padding: 35px 0;
+}
+
+.footer p {
+  color: #eadde1;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero-image {
+    height: 300px;
+  }
+
+  .section-padding {
+    padding: 50px 0;
+  }
+
+  .booking-form {
+    padding: 22px;
+  }
+}
+
+.btn-whatsapp {
+  background-color: #25D366;
+  color: #ffffff;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128C7E;
+  color: #ffffff;
+}
+
+.btn-whatsapp:focus-visible {
+  outline: 3px solid #128C7E;
+  outline-offset: 3px;
+}
